@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "es2016",
+		"module": "es6",
+		"moduleResolution": "node",
+		"baseUrl": "./src",
+		"paths": {
+		  "~/*": ["./*"]
+		},
+		"typeRoots": [
+			"node_modules/@types",
+			"node_module/phaser/types"
+		],
+		"types": [
+			"phaser"
+		]
+	},
+	"include": [
+		"src/**/*"
+	]
+}
