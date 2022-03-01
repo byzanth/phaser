@@ -1,0 +1,72 @@
+{ "frames": {
+   "Regal 0.png": {
+    "frame": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 1.png": {
+    "frame": { "x": 250, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 2.png": {
+    "frame": { "x": 500, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 3.png": {
+    "frame": { "x": 750, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 4.png": {
+    "frame": { "x": 1000, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 5.png": {
+    "frame": { "x": 1250, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   },
+   "Regal 6.png": {
+    "frame": { "x": 1500, "y": 0, "w": 250, "h": 464 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 250, "h": 464 },
+    "sourceSize": { "w": 250, "h": 464 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "C:\\Users\\Nils Kreutzer\\Downloads\\Regal-sheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 1750, "h": 464 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}
