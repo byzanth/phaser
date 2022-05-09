@@ -60,4 +60,4 @@ class Point {
 }
 ````
 
-Das soll zum Start erst einmal reichen. Typescript hat noch viele weitere, manchmal merkwürdige Befehle. Die lernen wier kennen, wenn wir darüber stolpern.
+Das soll zum Start erst einmal reichen. Typescript hat noch viele weitere, manchmal merkwürdige Befehle. Die lernen wir kennen, wenn wir darüber stolpern.
