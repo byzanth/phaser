@@ -4,6 +4,7 @@ Ich habe diese Installation mit `npm 8.9.0` auf meinem durchgeführt.
 
 ````
 git clone git@github.com:byzanth/phaser.git
+cd phaser
 npm install
 npm run build
 npm start
