@@ -12,6 +12,7 @@ export default class MainScene extends Phaser.Scene {
   public cloud1: Phaser.GameObjects.Image;
   public cloud2: Phaser.GameObjects.Image;
   public cursors: Phaser.Types.Input.Keyboard.CursorKeys;
+  public stupidmonster: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody;
 
   constructor() {
     super({});
@@ -23,7 +24,8 @@ export default class MainScene extends Phaser.Scene {
     this.load.image('moon', 'assets/kennyGameAssets/moon_full.png');
     this.load.image('cloud', 'assets/kennyGameAssets/cloud1.png');
     this.load.image('coin', 'assets/kennyGameAssets/gold_1.png');
-
+    this.load.image('stupidmonster', 'assets/kennyGameAssets/stupidmonster.png');
+    
     this.load.spritesheet(
       'player',
       'assets/sprites/forager.png',
@@ -48,6 +50,12 @@ export default class MainScene extends Phaser.Scene {
     this.player = this.physics.add.sprite(100, 150, 'player');
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
+    
+    // stupidmonster
+    this.stupidmonster = this.physics.add.sprite(300, 150, 'stupidmonster');
+    this.stupidmonster.setBounce(0.2);
+    this.stupidmonster.setCollideWorldBounds(true);
+
 
     // TODO: tailor the animations to sprite
     /* this.anims.create({
