@@ -135,6 +135,14 @@ export default class MainScene extends Phaser.Scene {
     if (this.cursors.up.isDown && this.player.body.touching.down) {
       this.player.setVelocityY(-330);
     }
+
+    // touched monster
+    let bounds_player = player.getBounds();
+    let bounds_monster = stupidmonster.getBounds();
+    if (Phaser.Rectangle.intersects(bounds_player, bounds_monster)) {
+      this.add.text(16, 16, 'Game over!', { fill: '#ffffff' });
+    }
+
   }
 
   private collectCoin(player, coin) {
