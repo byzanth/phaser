@@ -52,7 +52,7 @@ export default class MainScene extends Phaser.Scene {
     this.player.setCollideWorldBounds(true);
     
     // stupidmonster
-    this.stupidmonster = this.physics.add.sprite(300, 150, 'stupidmonster');
+    this.stupidmonster = this.physics.add.sprite(450, 150, 'stupidmonster');
     this.stupidmonster.setBounce(0.2);
     this.stupidmonster.setCollideWorldBounds(true);
 
@@ -81,6 +81,7 @@ export default class MainScene extends Phaser.Scene {
     this.cursors = this.input.keyboard.createCursorKeys();
 
     // let the player collide with platforms
+    this.physics.add.collider(this.stupidmonster, this.platforms);
     this.physics.add.collider(this.player, this.platforms);
 
     // add coins
