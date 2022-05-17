@@ -3,22 +3,16 @@ import * as Phaser from 'phaser';
 
 export default class MainScene extends Phaser.Scene {
   public score = 0;
-
   public scoreText: Phaser.GameObjects.Text;
-
   public player: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody;
-
   public platforms: Phaser.Physics.Arcade.StaticGroup;
-
   public coins: Phaser.GameObjects.Group;
-
+  public scoreCoin: Phaser.GameObjects.Image;
   public moon: Phaser.GameObjects.Image;
-
   public cloud1: Phaser.GameObjects.Image;
-
   public cloud2: Phaser.GameObjects.Image;
-
   public cursors: Phaser.Types.Input.Keyboard.CursorKeys;
+  public stupidmonster: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody;
 
   constructor() {
     super({});
@@ -90,6 +84,11 @@ export default class MainScene extends Phaser.Scene {
     this.physics.add.collider(this.player, this.platforms);
 
     // add coins
+    this.scoreCoin = this.add.sprite(30, 32, 'coin');
+    this.scoreCoin.setOrigin(.5, .5);
+    this.scoreCoin.scaleX = .5;
+    this.scoreCoin.scaleY = .5;
+
     const config: Phaser.Types.GameObjects.Group.GroupCreateConfig = {
       key: 'coin',
       repeat: 11,
@@ -110,7 +109,7 @@ export default class MainScene extends Phaser.Scene {
     this.physics.add.overlap(this.player, this.coins, this.collectCoin, null, this);
 
     // init score text
-    this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px' });
+    this.scoreText = this.add.text(56, 21, '0', { fontSize: '32px' });
   }
 
   update() {
@@ -148,7 +147,7 @@ export default class MainScene extends Phaser.Scene {
   private collectCoin(player, coin) {
     coin.disableBody(true, true);
     this.score += 10;
-    this.scoreText.setText(`Score: ${this.score}`);
+    this.scoreText.setText(`${this.score}`);
   }
 
   private moveImage(object: Phaser.GameObjects.Image, value: number, limit = 800) {
@@ -158,4 +157,5 @@ export default class MainScene extends Phaser.Scene {
       object.setX(-400);
     }
   }
+
 }
